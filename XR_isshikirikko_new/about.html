@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WebXRで一式陸攻を見てみよう</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="高知工業高等専門学校　岩﨑研究室が開発したWebXRサイトです。"
+    />
+    <meta name="keywords" content="XR,MR,AR,一式陸攻,一式陸上攻撃機,戦争遺跡" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/openclose.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="Simple Site"
+          /></a>
+        </h1>
+      </header>
+
+      <nav id="menubar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h2>About</h2>
+        <p>
+          このサイトは、
+          <a href="https://www.kosen-k.go.jp/" target="_blank"
+            >独立行政法人 国立高等専門学校機構</a
+          >
+          <a href="https://www.kochi-ct.ac.jp/" target="_blank"
+            >高知工業高等専門学校</a
+          >
+          <a
+            href="https://sites.google.com/view/iwaken-nit-kochi/"
+            target="_blank"
+            >岩﨑研究室（iwaken-nit-kochi）</a
+          >
+          で開発したWebXRアプリのページです。
+        </p>
+        <h2>WebXRについて</h2>
+        <p>
+          Webブラウザ上で動作するXRアプリケーションを提供する技術。<br />
+          特徴としては、デバイスへのアプリインストール不要であり、各種OS（Windows,
+          Mac, Android, iOS）に対応していることが挙げられる。
+        </p>
+        <h2>一式陸攻（一式陸上攻撃機）について</h2>
+        <p>
+          一式陸上攻撃機（いっしきりくじょうこうげきき / いちしき -
+          ）は大日本帝国海軍の陸上攻撃機である。<br />
+          略称は一式陸攻（いっしき / いちしきりくこう、- りっこう）。<br />
+          日本海軍の呼び名は中型攻撃機の略の、中攻。連合国側のコードネームは「Betty」（ベティー）。(Betty
+          bomberが、一式陸攻の米軍側の名称)三菱重工業株式会社（改称前は三菱内燃機株式会社）の設計・製造。日中戦争・太平洋戦争で日本海軍の主力攻撃機として使用された。<br />
+          <center>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/G4M-34s.jpg/300px-G4M-34s.jpg"
+              alt="本土上空を飛行する一式陸攻"
+            /><br />
+            －　<a
+              href="https://ja.wikipedia.org/wiki/%E4%B8%80%E5%BC%8F%E9%99%B8%E4%B8%8A%E6%94%BB%E6%92%83%E6%A9%9F"
+              target="_blank"
+              >Wikipedia</a
+            >より　－
+          </center>
+        </p>
+        <p>
+          大戦中には、<strong>高知県南国市前浜にある掩体壕（えんたいごう）に格納</strong>されていた。
+        </p>
+        <!-- <span class="look"
+          >Copyright&copy; SIMPLE SITE All Rights Reserved.</span
+        ><br /> -->
+      </section>
+    </div>
+    <!--/container-->
+
+    <footer>
+      <small
+        >&copy; 2022<br />
+        <a href="https://www.kosen-k.go.jp/" target="_blank"
+          >独立行政法人 国立高等専門学校機構</a
+        >
+        <a href="https://www.kochi-ct.ac.jp/" target="_blank"
+          >高知工業高等専門学校</a
+        ><br />
+        <a
+          href="https://sites.google.com/view/iwaken-nit-kochi/"
+          target="_blank"
+          >岩﨑研究室（iwaken-nit-kochi）</a
+        >
+      </small>
+      <span class="pr"
+        >《<a href="http://template-party.com/" target="_blank"
+          >Web Design:Template-Party</a
+        >》</span
+      >
+    </footer>
+
+    <!--スマホ用更新情報　480px以下-->
+    <script type="text/javascript">
+      if (OCwindowWidth() <= 480) {
+        open_close("newinfo_hdr", "newinfo");
+      }
+    </script>
+  </body>
+</html>

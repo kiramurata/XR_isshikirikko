@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WebXRで一式陸攻を見てみよう</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="高知工業高等専門学校　岩﨑研究室が開発したWebXRサイトです。"
+    />
+    <meta name="keywords" content="XR,MR,AR,一式陸攻,一式陸上攻撃機,戦争遺跡" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/openclose.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="Simple Site"
+          /></a>
+        </h1>
+      </header>
+
+      <nav id="menubar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <section id="new">
+        <h2 id="newinfo_hdr" class="close">更新情報・お知らせ</h2>
+        <dl id="newinfo">
+          <dt>2022/02/01</dt>
+          <dd>Aboutページを追加しました。</dd>
+          <dt>2022/01/23</dt>
+          <dd>GitHub Pages上で公開しました。</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>コンテンツ</h2>
+        <h3>AR（Augmented Reality：拡張現実）アプリ</h3>
+        <p>
+          <a href="./AR_isshikirikko.html" target="_blank"
+            ><strong>AR一式陸攻</strong></a
+          >
+          - 3D Model by Brando Nachman [<a
+            href="https://www.3dcadbrowser.com/3d-model/mitsubishi-isshikirikko"
+            target="_blank"
+            >3D CAD BROWSER</a
+          >]<br />
+        </p>
+        <p>
+          <span class="color1">
+            ※<strong
+              >以下の要件を満たしているスマートフォン・タブレットでご利用ください。</strong
+            ></span
+          ><br />
+          ・WebARに対応したOSおよびブラウザを搭載している<br />
+          　　［Android］OS：10.0以上、ブラウザ：Google Chrome、アプリ：Google Play
+          開発者サービス(AR)・ARCore<br />
+          　　　　<a href="https://developers.google.com/ar/devices#google_play" target="_blank"
+            >対応機種一覧（Android）</a
+          ><br />
+          　　［iOS］現在、未対応<!--OS：14.0以上、ブラウザ：Safari<br />
+          　　　　<a href="https://developers.google.com/ar/devices#ios" target="_blank"
+            >対応機種一覧（iOS）</a
+          >--><br />
+        </p>
+        <p>
+          <span class="color1"> ※<strong>使用方法</strong></span
+          >
+          <ol style="margin-top:-1.8em;">
+            <li>平らな場所に向けて、スマートフォンを動かしてください。→平面が認識されると赤いリングが表示されます。</li>
+            <li>「モデルを設置」ボタンをタップします。→赤いリングの場所に3Dモデルが表示されます。</li>
+            <li>「大きく表示」ボタンをタップすると3Dモデルが拡大、「小さく表示」ボタンをタップすると3Dモデルが縮小されます。</li>
+            <li>大きさを元に戻すには、「モデルを設置」ボタンをタップしてください。</li>
+          </ol>
+        </p>
+        <h3>VR（Augmented Reality：拡張現実）アプリ</h3>
+        <p>
+          <a href="./VR_isshikirikko.html" target="_blank"
+            ><strong>VR一式陸攻</strong></a
+          >
+          - 3D Model by Brando Nachman [<a
+            href="https://www.3dcadbrowser.com/3d-model/mitsubishi-isshikirikko"
+            >3D CAD BROWSER</a
+          >]<br />
+          <span class="color1"
+            >※<strong
+              >以下の要件を満たしているスマートフォン・タブレットでご利用ください。</strong
+            ></span
+          ><br />
+          ・WebVRに対応したOSおよびブラウザを搭載している<br />
+          　　［Android］OS：10.0以上、ブラウザ：Google Chrome<br />
+          　　［iOS］OS：14.0以上、ブラウザ：Safari<br />
+        </p>
+      </section>
+    </div>
+    <!--/container-->
+
+    <footer>
+      <small
+        >&copy; 2022<br />
+        <a href="https://www.kosen-k.go.jp/" target="_blank"
+          >独立行政法人 国立高等専門学校機構</a
+        >
+        <a href="https://www.kochi-ct.ac.jp/" target="_blank">高知工業高等専門学校</a><br />
+        <a href="https://sites.google.com/view/iwaken-nit-kochi/" target="_blank"
+          >岩﨑研究室（iwaken-nit-kochi）</a
+        >
+      </small>
+      <span class="pr"
+        >《<a href="http://template-party.com/" target="_blank"
+          >Web Design:Template-Party</a
+        >》</span
+      >
+    </footer>
+
+    <!--スマホ用更新情報　600px以下-->
+    <script type="text/javascript">
+      if (OCwindowWidth() <= 600) {
+        open_close("newinfo_hdr", "newinfo");
+      }
+    </script>
+  </body>
+</html>
